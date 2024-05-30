@@ -1,0 +1,350 @@
+body {
+  background-color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(225, 0, 225);
+}
+header div {
+  text-align: center;
+}
+
+h1, h2 {
+  color: #5AF;
+  text-align: center;
+  padding: 10px;
+}
+
+.logo {
+  border-radius: 50%;
+  width: 120px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.subtColor {
+  color: #5AF;
+}
+
+p {
+  color: #000;
+  text-align: justify;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+.centrar {
+  text-align: center;
+}
+
+.derecha {
+  text-align: right;
+}
+
+.size {
+  width: 500px;
+  border-radius: 20px;
+}
+
+footer {
+  padding: 20px;
+  background: rgb(225, 0, 225);
+}
+footer h3 {
+  text-align: center;
+  color: #ffffff;
+}
+
+/*Grid recetas*/
+.Recetas {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 0.9fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  padding: 10px;
+  grid-auto-flow: column;
+  grid-template-areas: "Receta1 Receta1 ImgRe1" "Receta2 Receta2 ImgRe2" "Receta3 Receta3 ImgRe3" "Receta4 Receta4 ImgRe4" "Receta5 Receta5 ImgRe5" "Receta6 Receta6 ImgRe6" "Receta7 Receta7 ImgRe7" "Receta8 Receta8 ImgRe8" "Receta9 Receta9 ImgRe9" "Receta10 Receta10 ImgRe10";
+}
+
+.Receta1 {
+  background-color: #ffffff;
+  color: #5AF;
+  border-color: #000;
+  text-align: start;
+  border-bottom: 2px solid #000;
+  grid-area: Receta1;
+}
+
+.Receta2 {
+  background-color: #ffffff;
+  color: #5AF;
+  border-color: #000;
+  text-align: start;
+  border-bottom: 2px solid #000;
+  grid-area: Receta2;
+}
+
+.Receta3 {
+  background-color: #ffffff;
+  color: #5AF;
+  border-color: #000;
+  text-align: start;
+  border-bottom: 2px solid #000;
+  grid-area: Receta3;
+}
+
+.Receta4 {
+  background-color: #ffffff;
+  color: #5AF;
+  border-color: #000;
+  text-align: start;
+  border-bottom: 2px solid #000;
+  grid-area: Receta4;
+}
+
+.Receta5 {
+  background-color: #ffffff;
+  color: #5AF;
+  border-color: #000;
+  text-align: start;
+  border-bottom: 2px solid #000;
+  grid-area: Receta5;
+}
+
+.Receta6 {
+  background-color: #ffffff;
+  color: #5AF;
+  border-color: #000;
+  text-align: start;
+  border-bottom: 2px solid #000;
+  grid-area: Receta6;
+}
+
+.Receta7 {
+  background-color: #ffffff;
+  color: #5AF;
+  border-color: #000;
+  text-align: start;
+  border-bottom: 2px solid #000;
+  grid-area: Receta7;
+}
+
+.Receta8 {
+  background-color: #ffffff;
+  color: #5AF;
+  border-color: #000;
+  text-align: start;
+  border-bottom: 2px solid #000;
+  grid-area: Receta8;
+}
+
+.Receta9 {
+  background-color: #ffffff;
+  color: #5AF;
+  border-color: #000;
+  text-align: start;
+  border-bottom: 2px solid #000;
+  grid-area: Receta9;
+}
+
+.Receta10 {
+  background-color: #ffffff;
+  color: #5AF;
+  border-color: #000;
+  text-align: start;
+  border-bottom: 2px solid #000;
+  grid-area: Receta10;
+}
+
+.ImgRe1 {
+  grid-area: ImgRe1;
+}
+
+.ImgRe2 {
+  grid-area: ImgRe2;
+}
+
+.ImgRe3 {
+  grid-area: ImgRe3;
+}
+
+.ImgRe4 {
+  grid-area: ImgRe4;
+}
+
+.ImgRe5 {
+  grid-area: ImgRe5;
+}
+
+.ImgRe6 {
+  grid-area: ImgRe6;
+}
+
+.ImgRe7 {
+  grid-area: ImgRe7;
+}
+
+.ImgRe8 {
+  grid-area: ImgRe8;
+}
+
+.ImgRe9 {
+  grid-area: ImgRe9;
+}
+
+.ImgRe10 {
+  grid-area: ImgRe10;
+}
+
+/*Login*/
+.form-login {
+  width: 400px;
+  height: 340px;
+  background: rgb(225, 0, 225);
+  margin: auto;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  padding: 20px 30px;
+}
+.form-login h5 {
+  margin: 0%;
+  text-align: center;
+  height: 40px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ffffff;
+  font-size: 25px;
+  color: #5AF;
+}
+.form-login p {
+  height: 40px;
+  text-align: center;
+}
+.form-login a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.form-login a:hover {
+  text-decoration: underline;
+}
+
+.controls {
+  width: 100%;
+  border: 1px solid #000;
+  margin-bottom: 15px;
+  padding: 11px 10px;
+  font-weight: bold;
+}
+
+.button {
+  width: 100%;
+  height: 30px;
+  background: #ffffff;
+  border: none;
+  margin-bottom: 10px;
+}
+
+/* Pagina Contacto*/
+.form-contacto {
+  width: 800px;
+  height: 550px;
+  background: rgb(225, 0, 225);
+  margin: auto;
+  margin-bottom: 70px;
+  padding: 20px 30px;
+}
+
+.buttons {
+  width: 50%;
+  border: 1px solid #000;
+  margin-bottom: 15px;
+  padding: 11px 10px;
+  font-weight: bold;
+}
+
+/* responsive grid recetas*/
+@media screen and (max-width: 768px) {
+  .Recetas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
+    gap: 0px 0px;
+    padding: 10px;
+    grid-auto-flow: column;
+    grid-template-areas: "Receta1" "ImgRe1" "Receta2" "ImgRe2" "Receta3" "ImgRe3" "Receta4" "ImgRe4" "Receta5" "ImgRe5";
+  }
+}
+/* responsive contacto*/
+@media screen and (max-width: 768px) {
+  .form-contacto {
+    width: 500px;
+    height: 350px;
+    background: rgb(225, 0, 225);
+    margin: auto;
+    margin-bottom: 70px;
+    padding: 20px 30px;
+  }
+  .buttons {
+    width: 50%;
+    border: 1px solid #000;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    font-weight: bold;
+  }
+}
+/*Carrusel*/
+.slider-frame {
+  width: 400px;
+  height: auto;
+  margin: 0px auto 0;
+  overflow: hidden;
+}
+.slider-frame ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: slide 20s infinite alternate ease-in-out;
+}
+.slider-frame li {
+  width: 200%;
+  list-style: none;
+}
+.slider-frame img {
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */
