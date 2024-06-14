@@ -46,6 +46,7 @@ p{
 }
 
 footer{
+    margin-top: 40px;
     padding: 20px;
     background: $Fucsia;
     h3{
@@ -61,6 +62,7 @@ footer{
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     padding: 10px;
+    margin-left: 20px;
     grid-auto-flow: column;
     grid-template-areas:
       "Receta1 Receta1 ImgRe1"
@@ -78,81 +80,93 @@ footer{
   .Receta1 {
     background-color: #ffffff;
     color: $Celeste;
-    border-color: #000;
     text-align: start;
-    border-bottom: 2px solid #000;
-    grid-area: Receta1; }
+    border-top: 2px solid #000;
+    @include bordes;
+    grid-area: Receta1;
+        h4{margin: 1rem;}
+}
   
   .Receta2 { 
     background-color: #ffffff;
     color: $Celeste;
-    border-color: #000;
     text-align: start;
-    border-bottom: 2px solid #000;
-    grid-area: Receta2; }
+    @include bordes;
+    grid-area: Receta2; 
+        h4{margin: 1rem;}
+}
   
   .Receta3 { 
     background-color: #ffffff;
     color: $Celeste;
-    border-color: #000;
     text-align: start;
-    border-bottom: 2px solid #000;
-    grid-area: Receta3; }
+    @include bordes;
+    grid-area: Receta3; 
+        h4{margin: 1rem;}
+}
   
   .Receta4 { 
     background-color: #ffffff;
     color: $Celeste;
-    border-color: #000;
     text-align: start;
-    border-bottom: 2px solid #000;
-    grid-area: Receta4; }
+    @include bordes;
+    grid-area: Receta4; 
+        h4{margin: 1rem;}
+}
   
   .Receta5 { 
     background-color: #ffffff;
     color: $Celeste;
-    border-color: #000;
     text-align: start;
-    border-bottom: 2px solid #000;
-    grid-area: Receta5; }
+    @include bordes;
+    grid-area: Receta5; 
+        h4{margin: 1rem;}
+}
+
     .Receta6 {
     background-color: #ffffff;
     color: $Celeste;
-    border-color: #000;
     text-align: start;
-    border-bottom: 2px solid #000;
-    grid-area: Receta6; }
+    @include bordes;
+    grid-area: Receta6; 
+        h4{margin: 1rem;}
+}
   
   .Receta7 { 
     background-color: #ffffff;
     color: $Celeste;
-    border-color: #000;
     text-align: start;
-    border-bottom: 2px solid #000;
-    grid-area: Receta7; }
+    @include bordes;
+    grid-area: Receta7; 
+        h4{margin: 1rem;}
+}
   
   .Receta8 { 
     background-color: #ffffff;
     color: $Celeste;
-    border-color: #000;
     text-align: start;
-    border-bottom: 2px solid #000;
-    grid-area: Receta8; }
+    @include bordes;
+    grid-area: Receta8; 
+        h4{margin: 1rem;}
+}
   
   .Receta9 { 
     background-color: #ffffff;
     color: $Celeste;
-    border-color: #000;
     text-align: start;
-    border-bottom: 2px solid #000;
-    grid-area: Receta9; }
+    @include bordes;
+    grid-area: Receta9; 
+        h4{margin: 1rem;}
+}
   
   .Receta10 { 
     background-color: #ffffff;
     color: $Celeste;
-    border-color: #000;
     text-align: start;
-    border-bottom: 2px solid #000;
-    grid-area: Receta10; }
+    @include bordes;
+    grid-area: Receta10; 
+        h4{margin: 1rem;}
+}
     
   .ImgRe1 { grid-area: ImgRe1; }
   
@@ -177,7 +191,7 @@ footer{
 /*Login*/
 
 .form-login{
-    width: 400px;
+    width: 380px;
     height: 340px;
     background: $Fucsia;
     margin: auto;
@@ -224,12 +238,19 @@ footer{
 /* Pagina Contacto*/
 
 .form-contacto{
-    width: 800px;
+    width: 660px;
     height: 550px;
     background: $Fucsia;
     margin: auto;
     margin-bottom: 70px;
     padding: 20px 30px;
+}
+.controles{
+    width: 100%;
+    border: 1px solid #000;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    font-weight: bold;
 }
 .buttons{
     width: 50%;
@@ -238,15 +259,25 @@ footer{
     padding: 11px 10px;
     font-weight: bold;
 }
-
+    textarea
+    {
+  width: 100%;
+  padding: 8px 18px;
+  margin: 9px 0;
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 3px;
+  box-sizing: border-box;
+    }
 /* responsive grid recetas*/
 
 @media screen and (max-width: 768px){
     .Recetas{   display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
-        gap: 0px 0px;
-        padding: 10px;
+        grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: auto;
+        padding: 20px;
+        margin-inline-end: 20px;
         grid-auto-flow: column;
         grid-template-areas:
           "Receta1" 
@@ -258,7 +289,17 @@ footer{
           "Receta4" 
           "ImgRe4"
           "Receta5" 
-          "ImgRe5";
+          "ImgRe5"
+          "Receta6"
+          "ImgRe6"
+          "Receta7"
+          "ImgRe7"
+          "Receta8"
+          "ImgRe8"
+          "Receta9"
+          "ImgRe9"
+          "Receta10"
+          "ImgRe10";
     }
 }
 
@@ -266,19 +307,61 @@ footer{
 
 @media screen and (max-width: 768px){
     .form-contacto{
-        width: 500px;
-        height: 350px;
+        width: auto;
+        height: 500px;
         background: $Fucsia;
-        margin: auto;
+        margin: 10px;
         margin-bottom: 70px;
         padding: 20px 30px;
     }
-    .buttons{
-        width: 50%;
+    .controles{
+        width: 95%;
         border: 1px solid #000;
         margin-bottom: 15px;
         padding: 11px 10px;
         font-weight: bold;
+    }
+    .buttons{
+        width: auto;
+        border: 1px solid #000;
+        margin-bottom: 15px;
+        padding: 11px 10px;
+        font-weight: bold;
+    
+    }
+}
+
+/* responsive login */
+
+@media screen and (max-width: 768px){
+    .form-login{
+        width: 350px;
+        height: 340px;
+        background: $Fucsia;
+        margin-block: auto;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        padding: 20px 30px;
+        h5{
+            margin: 0%;
+            text-align: center;
+            height: 40px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ffffff;
+            font-size: 25px;
+            color: $Celeste;
+        }
+        p{
+            height: 40px;
+            text-align: center;
+        }
+        a{
+            color: #ffffff;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
     }
 }
 
